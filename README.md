@@ -24,16 +24,16 @@ Install Vue Images Dragger with npm
 Import Images Dragger in main.ts
 
 ```bash
-  import DraggerPlugin from 'vue-images-dragger';
-  import 'vue-images-dragger/styles.css';
+  import DraggerPlugin from 'vue3-images-dragger';
+  import 'vue3-images-dragger/styles.css';
   app.use(DraggerPlugin)
 ```
 
 Use as component
 
 ```bash
-  import {ImagesDragger} from 'vue-images-dragger';
-  import 'vue-images-dragger/styles.css';
+  import {ImagesDragger} from 'vue3-images-dragger';
+  import 'vue3-images-dragger/styles.css';
 ```
 
 ##  Usage

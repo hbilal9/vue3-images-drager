@@ -13,6 +13,12 @@
   }
 
   const files = ref([])
+  function  dragover(event: Event) {
+    event.preventDefault();
+  }
+  function  dragleave(event: Event) {
+    event.preventDefault();
+  }
   function drop(event: Event) {
     event.preventDefault();
     const data = (event as DragEvent).dataTransfer.files;
@@ -42,7 +48,7 @@
 
 <template>
   <div id="wrapper">
-    <div class="uploader-box" @drop="drop">
+    <div class="uploader-box" @dragover="dragover" @dragleave="dragleave" @drop="drop">
       <label for="file" class="label">
         Drap & Drop File OR <span class="choose-text"> Choose </span>
       </label>

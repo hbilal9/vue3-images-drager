@@ -16,7 +16,7 @@ with this simple component you can upload Images or Drag Images
 Install Vue Images Dragger with npm
 
 ```bash
-  npm i vue-images-dragger
+  npm i vue3-images-dragger
 ```
     
 ## Setup
@@ -60,3 +60,7 @@ Use as component
 </template>
 
 ```
+
+## 🔗 Github Repo
+[![github](https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hbilal9/vue3-images-drager)
+

@@ -3,18 +3,6 @@
   const emit = defineEmits<{
     (e: 'getImages', files: Array<String>): void
   }>()
-  function dragover(event: Event) {
-    event.preventDefault();
-    if (!event.currentTarget.classList.contains('bg-sky-blue')) {
-      event.currentTarget.classList.remove('bg-gray');
-      event.currentTarget.classList.add('bg-sky-blue');
-    }
-  }
-  function dragleave(event: Event) {
-    event.preventDefault();
-    event.currentTarget.classList.remove('bg-sky-blue');
-    event.currentTarget.classList.add('bg-grap');
-  }
 
   const previewImage = (img: Blob) => {
     return URL.createObjectURL(img)
@@ -37,27 +25,24 @@
     if (count == data.length) {
       emit('getImages', files.value)
     }
-
-    event.currentTarget.classList.add('bg-gray');
-    event.currentTarget.classList.remove('bg-sky-blue');
   }
   function onChange(event: Event) {
     for (const el of (event as HTMLInputEvent).target.files) {
       files.value.push(el)
     }
-    emit('files', files.value)
+    emit('getImages', files.value)
   }
 
   const removeImage = (img: String) => {
     const index = files.value.indexOf(img);
     files.value.splice(index, 1);
-    emit('files', files.value)
+    emit('getImages', files.value)
   }
 </script>
 
 <template>
   <div id="wrapper">
-    <div class="uploader-box" @dragover="dragover" @dragleave="dragleave" @drop="drop">
+    <div class="uploader-box" @drop="drop">
       <label for="file" class="label">
         Drap & Drop File OR <span class="choose-text"> Choose </span>
       </label>

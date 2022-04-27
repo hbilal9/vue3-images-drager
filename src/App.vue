@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { ref } from 'vue';
-  import FileUploader from './components/FileUploader.vue'
+  // import FileUploader from './components/FileUploader.vue'
   function test(t: any){
     files.value = t;
   }
@@ -13,7 +13,7 @@
 
 <template>
   <main>
-      <FileUploader @getImages="test"/>
+      <images-dragger @getImages="test"/>
 
       <div v-for="(file, i) in files" :key="i">
         <img :src="previewImage(file)" alt="">

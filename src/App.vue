@@ -13,7 +13,7 @@
 
 <template>
   <main>
-      <images-dragger @getImages="test"/>
+      <images-dragger @getImages="test" customClass="custom-class"/>
 
       <div v-for="(file, i) in files" :key="i">
         <img :src="previewImage(file)" alt="">
@@ -22,5 +22,9 @@
 </template>
 
 <style>
-
+  .custom-class {
+    background-color: red !important;
+    border: 2px solid yellow !important;
+    font-size: 1.5rem;
+  }
 </style>

@@ -61,6 +61,26 @@ Use as component
 
 ```
 
+## Props
+
+You can pass a custom class as a props to design the component according to your needs
+
+```
+<images-dragger @getImages="test" customClass="custom-class"/>
+```
+
+css 
+
+```
+custom-class {
+    background-color: red !important;
+    border: 2px solid yellow !important;
+    font-size: 1.5rem;
+  }
+```
+
+you can target font, background, width, height, border 
+
 ## 🔗 Github Repo
 [![github](https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hbilal9/vue3-images-drager)
 

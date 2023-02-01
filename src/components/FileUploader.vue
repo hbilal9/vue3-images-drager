@@ -3,6 +3,11 @@
   const emit = defineEmits<{
     (e: 'getImages', files: Array<String>): void
   }>()
+  const props = defineProps<{
+    customClass: {
+      type: String
+    }
+  }>()
 
   const previewImage = (img: Blob) => {
     return URL.createObjectURL(img)
@@ -48,7 +53,7 @@
 
 <template>
   <div id="wrapper">
-    <div class="uploader-box" @dragover="dragover" @dragleave="dragleave" @drop="drop">
+    <div class="uploader-box" :class="customClass" @dragover="dragover" @dragleave="dragleave" @drop="drop">
       <label for="file" class="label">
         Drap & Drop File OR <span class="choose-text"> Choose </span>
       </label>

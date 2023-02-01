@@ -1,6 +1,6 @@
 {
   "name": "vue3-images-dragger",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "keywords": ["vue3", "images", "vue-images", "vue multiple images", "dragger", "images dragger", "images drag and drop"],
   "exports": {

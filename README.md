@@ -64,3 +64,7 @@ Use as component
 ## 🔗 Github Repo
 [![github](https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hbilal9/vue3-images-drager)
 
+
+## Support Me
+
+[![Coffee](https://img.shields.io/badge/Coffee-Buy%20me%20a%20coffee-yellow)](https://www.buymeacoffee.com/hbilal9)

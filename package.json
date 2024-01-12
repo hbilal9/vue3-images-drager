@@ -15,7 +15,7 @@
   "broswer" : {
     "./styles.css" : "./dist/style.css"
   },
-  "types": "./dist/DraggerPlugin.d",
+  "types": "./dist/DraggerPlugin.d.ts",
   "license": "MIT",
   "files": [
     "dist"
